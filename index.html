@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Async-Await gerneric with firebase</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formPost">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input id="title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="content">content</label>
+                                <textarea id="content" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">userId</label>
+                                <select id="userId" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary w-100">Add Post</button>
+                            <button class="btn btn-primary w-100 d-none">Update Post</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="postContainer">
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 title="HTML, CSS, Javascript and Typescript">HTML, CSS, Javascript and Typescript</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit soluta neque odio
+                            recusandae consequuntur, vel, omnis aliquid quod repellendus praesentium accusamus cum
+                            dolorem. Ad est expedita dolor, inventore consequuntur ab.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <i type="button" class="fa-solid fa-pen-to-square fa-2x text-success"></i>
+                        <i type="button" class="fa-solid fa-trash fa-2x text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
 </body>
+
 </html>

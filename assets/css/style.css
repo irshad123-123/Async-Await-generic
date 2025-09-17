@@ -1,0 +1,13 @@
+body{
+    background-color: blanchedalmond;
+}
+#postContainer h4{
+    height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-body p{
+    height: 120px;
+    overflow: auto;
+}
