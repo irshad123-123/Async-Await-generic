@@ -63,6 +63,8 @@ userIdControler.value = res.userId
 addPost.classList.add('d-none')
 updatePost.classList.remove('d-none')
  snackBar('The data is patch successfully!!!', 'success')
+        formPost.scrollIntoView({ behavior: "smooth", block: "center" });
+    titleControler.focus()
 
 }
 
@@ -81,6 +83,8 @@ const onRemove = async(ele) =>{
     snackBar('The post is deleted successfully!!!', 'success')
     let card = document.getElementById(Remove_Id).parentElement
     card.remove()
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 }
 
@@ -147,6 +151,8 @@ const onSubmitObj = async (eve)=>{
                     </div>
                 </div>`
         postContainer.prepend(card)
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+
 }
 
 const onUpdatePost =async (eve) =>{
@@ -169,6 +175,9 @@ const onUpdatePost =async (eve) =>{
 
      addPost.classList.remove('d-none')
      updatePost.classList.add('d-none')
+
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+
 }
 
 formPost.addEventListener('submit', onSubmitObj)
